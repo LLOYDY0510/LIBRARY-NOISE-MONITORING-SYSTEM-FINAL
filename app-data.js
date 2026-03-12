@@ -219,18 +219,18 @@ const AppData = (() => {
     updateNotifBadge();
   }
 
-  // ── RESET ALL DATA ────────────────────────────────────────────
+ 
   function resetAll() {
     Object.values(KEYS).forEach(k => localStorage.removeItem(k));
     init();
   }
 
-  // ── PUBLIC API ────────────────────────────────────────────────
+ 
   return {
     init, resetAll, today, yesterday,
-    // Zones
+   
     getZones, saveZones, addZone, updateZone, deleteZone, getZone, updateNoiseLevels,
-    // Alerts
+    
     getAlerts, saveAlerts, getActiveAlerts, addAlert, resolveAlert, autoAlert,
     addAlertMessage, getAlertMessages,
     // Reports
